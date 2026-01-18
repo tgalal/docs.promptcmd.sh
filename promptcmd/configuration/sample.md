@@ -1,0 +1,107 @@
+# Sample Configuration File
+
+In this page you find a full configuration with all sections commented out. All
+sections and keys are optional, uncomment what fits your setting.
+
+::: code-group
+
+```toml [config.toml]
+#"############### promptcmd ################
+#
+# To modify, uncomment any section to edit
+# it configuration.
+#
+##########################################
+### Configuration for the "create" command
+##########################################
+# [create]
+# no_enable = false # Auto enable prompt once created
+# force = false  # Force save prompt files disregarding validation result
+
+##########################################
+### Configuration for the "import" command
+##########################################
+# [import]
+# enable = false # Auto enable prompt once imported
+# force = false  # Force import disregarding validation result
+
+###########################################
+### Default Configuration for all providers
+###########################################
+# [providers]
+### Default model to use if not specified in prompt files.
+### Can be in provider/model format, just the provider name,
+### a variant, or a group name.
+# default = "ollama/gpt-oss:20b"
+# temperature = 1.0
+# system = "You are a useful assistant"
+# max_tokens = 1000
+# cache_ttl = 0 # Number of seconds to cache responses
+
+#################################
+### GenAI Providers Configuration
+#################################
+# [providers.openai]
+# model = "gpt-5-mini-2025-08-07"
+# api_key = "sk-proj-xxxx"
+# temperature = 1.0
+# max_tokens = 1.0
+# system = "You are a useful assistant"
+# cache_ttl = 0
+
+# [providers.openrouter]
+# model = "anthropic/claude-sonnet-4"
+# api_key = "sk-or-xxxx"
+# temperature = 1.0
+# max_tokens = 1.0
+# system = "You are a useful assistant"
+# cache_ttl = 0
+
+# [providers.google]
+# model = "gemini-2.5-flash"
+# api_key = "aaaaaa..."
+# temperature = 1.0
+# max_tokens = 1.0
+# system = "You are a useful assistant"
+# cache_ttl = 0
+
+# [providers.anthropic]
+# api_key = "sk-ant-xxxx"
+# model = "claude-opus-4-5"
+# temperature = 1.0
+# max_tokens = 1.0
+# system = "You are a useful assistant"
+# cache_ttl = 0
+
+# [providers.ollama]
+# endpoint = "http://127.0.0.1:11434"
+# model = "gpt-oss:20b"
+# cache_ttl = 0
+
+#########################################################################
+### Configurations for Variants.
+### These inherit their provider's configuration, overriding any property
+### as needed
+#########################################################################
+# [providers.anthropic.rust-coder]
+# system = """You are a rust coding assistant helping me with rust questions.
+# Be brief, do not use markdown in your answers. Prefer to answer with pure code
+# (no before and after explanation unless very appropriate)"""
+
+##########################################################################
+### Configurations for Groups.
+### Executions are load balanced across members of a group based on
+### token consumption. Load is split proportionate to any indicated weight
+###########################################################################
+# [groups.balanced]
+# providers = [
+#   "anthropic", "google", "openrouter"
+# ]
+
+# [groups.unbalanced]
+# providers = [
+#   { name = "google",    weight = 5 },
+#   { name = "anthropic", weight = 1 },
+# ]
+```
+:::

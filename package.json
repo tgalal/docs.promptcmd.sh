@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.15"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev promptcmd",
+    "docs:build": "vitepress build promptcmd",
+    "docs:preview": "vitepress preview promptcmd"
+  }
+}
