@@ -19,7 +19,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Introduction',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: 'What is promptcmd?', link: '/intro/' },
           { text: 'Installation', link: '/intro/installation' },
