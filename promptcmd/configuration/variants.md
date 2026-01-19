@@ -79,8 +79,3 @@ system: |
 Generate a Rust function that {{STDIN}}
 ```
 
-## Next Steps
-
-- **[Caching](caching.md)** - Optimize variant responses with caching
-- **[Configuration Reference](/configuration/sample)** - Complete config options
-- **[Load Balancing](load-balancing.md)** - Distribute requests across multiple providers

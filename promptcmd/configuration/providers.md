@@ -179,10 +179,3 @@ api_key = "sk-xxxxx"
 [providers.ollama]
 endpoint = "http://localhost:11434"
 ```
-
-## Next Steps
-
-- **[Variants](variants.md)** - Create specialized provider configurations
-- **[Load Balancing](load-balancing.md)** - Distribute requests across multiple providers
-- **[Caching](caching.md)** - Optimize with response caching
-- **[Configuration Reference](/configuration/sample)** - Complete config options

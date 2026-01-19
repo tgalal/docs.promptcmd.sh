@@ -34,7 +34,7 @@ Options include:
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-See [Model Resolution](/promptcmd/configuration/model-resolution) for how model names are resolved.
+See [Model Resolution](/configuration/model-resolution) for how model names are resolved.
 
 </div>
 

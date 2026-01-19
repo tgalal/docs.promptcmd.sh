@@ -169,9 +169,3 @@ Priority order (highest to lowest):
 2. **Provider settings**
 3. **Global settings** (least specific)
 
-## Next Steps
-
-- **[Providers](providers.md)** - Detailed provider configuration
-- **[Variants](variants.md)** - Create specialized model configurations
-- **[Caching](caching.md)** - Optimize with response caching
-- **[Load Balancing](load-balancing.md)** - Distribute load across providers

@@ -3,7 +3,7 @@
 ::: info
 In addition to the below info, you may also want to delete the configuration
 files and prompts, see the paths listed under [Lookup
-Paths](/getting-started/lookup-paths).
+Paths](/intro/lookup-paths).
 :::
 
 ## Linux/macOS (Shell-based Installation)

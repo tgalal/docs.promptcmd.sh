@@ -18,7 +18,7 @@ Your templated prompt here with {{param1}} and {{param2}}.
 
 Templates uses [Handlebars](https://handlebarsjs.com/) syntax for dynamic
 content generation based on the [input schema](frontmatter#input-schema) and
-available [helpers](helpers).
+available [helpers](/dotprompt/templates#helpers).
 
 ## Template Basics
 

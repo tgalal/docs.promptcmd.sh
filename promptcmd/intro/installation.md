@@ -106,8 +106,3 @@ On Linux/macOS, if you encounter permission errors:
 chmod +x ~/.local/bin/promptcmd ~/.local/bin/promptctl
 ```
 
-## Next Steps
-
-- [Quick Start Guide](quick-start.md) - Create your first prompt
-- [Configuration](../configuration/providers.md) - Set up AI providers
-- [Your First Prompt](first-prompt.md) - Detailed tutorial
