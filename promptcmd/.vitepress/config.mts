@@ -5,8 +5,12 @@ export default defineConfig({
   title: "promptcmd",
   description: "Turn GenAI prompts into runnable programs",
   cleanUrls: true,
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    editLink: {
+      pattern: 'https://github.com/tgalal/docs.promptcmd.sh/edit/main/:path'
+    },
     nav: [
       { text: 'Prompt Creator', link: 'https://promptcmd.sh/creator/' },
       { text: 'Prompt Lib', link: 'https://promptcmd.sh/lib/' },
