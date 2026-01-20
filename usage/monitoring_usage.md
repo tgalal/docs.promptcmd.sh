@@ -54,7 +54,7 @@ $ promptctl run --dry PROMPTNAME -- [PROMPT ARGS]
 
 This lets you validate your prompt template and arguments without consuming
 tokens or incurring API costs. See [Executing
-Prompts](/concepts/exec#dry-run-mode) for more details on dry run mode with
+Prompts](/usage/exec#dry-run-mode) for more details on dry run mode with
 other execution methods.
 
 ## Caching

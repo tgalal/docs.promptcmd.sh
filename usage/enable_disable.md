@@ -41,6 +41,6 @@ $ promptctl disable translate
 The prompt file remains in your [prompts directory](/intro/lookup-paths), but
 the command symlink is removed from `~/.promptcmd/bin/`. You can still execute
 disabled prompts using indirect methods (see [Executing
-Prompts](/concepts/exec#indirect-execution)).
+Prompts](/usage/exec#indirect-execution)).
 
 To re-enable a disabled prompt, use `promptctl enable` again.
