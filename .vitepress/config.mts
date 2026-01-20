@@ -6,6 +6,7 @@ export default defineConfig({
   description: "Turn GenAI prompts into runnable programs",
   cleanUrls: true,
   lastUpdated: true,
+  appearance: 'dark',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     editLink: {
