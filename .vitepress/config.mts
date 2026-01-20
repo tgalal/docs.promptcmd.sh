@@ -62,12 +62,13 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Concepts',
+        text: 'Usage',
         collapsed: false,
         items: [
-          { text: 'Enabling/Disabling Prompts', link: '/concepts/enable_disable' },
-          { text: 'Executing Prompts', link: '/concepts/exec' },
-          { text: 'Monitoring Usage', link: '/concepts/monitoring_usage' },
+          { text: 'Enabling/Disabling Prompts', link: '/usage/enable_disable' },
+          { text: 'Executing Prompts', link: '/usage/exec' },
+          { text: 'Monitoring Usage', link: '/usage/monitoring_usage' },
+          { text: 'Integrations', link: '/usage/integrations' },
         ]
       }
     ]
