@@ -37,6 +37,7 @@ sections and keys are optional, uncomment what fits your setting.
 # system = "You are a useful assistant"
 # max_tokens = 1000
 # cache_ttl = 0 # Number of seconds to cache responses
+# stream = true # Enable streaming responses
 
 #################################
 ### GenAI Providers Configuration
@@ -48,6 +49,7 @@ sections and keys are optional, uncomment what fits your setting.
 # max_tokens = 1.0
 # system = "You are a useful assistant"
 # cache_ttl = 0
+# stream = true
 
 # [providers.openrouter]
 # model = "anthropic/claude-sonnet-4"
@@ -56,6 +58,7 @@ sections and keys are optional, uncomment what fits your setting.
 # max_tokens = 1.0
 # system = "You are a useful assistant"
 # cache_ttl = 0
+# stream = true
 
 # [providers.google]
 # model = "gemini-2.5-flash"
@@ -64,6 +67,7 @@ sections and keys are optional, uncomment what fits your setting.
 # max_tokens = 1.0
 # system = "You are a useful assistant"
 # cache_ttl = 0
+# stream = true
 
 # [providers.anthropic]
 # api_key = "sk-ant-xxxx"
@@ -72,11 +76,13 @@ sections and keys are optional, uncomment what fits your setting.
 # max_tokens = 1.0
 # system = "You are a useful assistant"
 # cache_ttl = 0
+# stream = true
 
 # [providers.ollama]
 # endpoint = "http://127.0.0.1:11434"
 # model = "gpt-oss:20b"
 # cache_ttl = 0
+# stream = true
 
 #########################################################################
 ### Configurations for Variants.

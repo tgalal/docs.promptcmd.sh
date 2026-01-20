@@ -14,6 +14,7 @@ These correspond to the configuration keys you'd set in the `config.toml` under
 - `PROMPTCMD_PROVIDERS_MAX_TOKENS`
 - `PROMPTCMD_PROVIDERS_MODEL`
 - `PROMPTCMD_PROVIDERS_CACHE_TTL`
+- `PROMPTCMD_PROVIDERS_STREAM`
 - `PROMPTCMD_PROVIDERS_API_KEY`
 
 The variables are going to be used regardless of the final provider being
@@ -30,6 +31,7 @@ your intended provider:
 - `PROMPTCMD_ANTHROPIC_MAX_TOKENS`
 - `PROMPTCMD_ANTHROPIC_MODEL`
 - `PROMPTCMD_ANTHROPIC_CACHE_TTL`
+- `PROMPTCMD_ANTHROPIC_STREAM`
 - `PROMPTCMD_ANTHROPIC_API_KEY`
 
 If both Provider-Specific and Common Provider's env variables are set, the
@@ -45,6 +47,7 @@ your desired provider and variant name.
 - `PROMPTCMD_GOOGLE_CODER_MAX_TOKENS`
 - `PROMPTCMD_GOOGLE_CODER_MODEL`
 - `PROMPTCMD_GOOGLE_CODER_CACHE_TTL`
+- `PROMPTCMD_GOOGLE_CODER_STREAM`
 - `PROMPTCMD_GOOGLE_CODER_API_KEY`
 
 If both Variant-Specific and Provider-Specific variables are set, the

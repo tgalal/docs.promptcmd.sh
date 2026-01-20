@@ -86,6 +86,17 @@ cache_ttl = 60  # Cache for 60 seconds
 
 Set to `0` to disable caching.
 
+### Stream
+
+Controls whether responses are streamed incrementally or returned all at once:
+
+```toml
+[providers]
+stream = true  # Enable streaming (default)
+```
+
+Set to `false` to disable streaming and wait for complete responses.
+
 ## Provider-specific Configuration
 
 Configure individual AI providers with their specific settings.
