@@ -9,7 +9,7 @@ Before starting, make sure you have: you have successfully
 
 ## Minimal Configuration
 
-There are [multiple ways](/configuration/) to configure promptcmd. For
+There are [multiple ways](/configuration/sources/) to configure promptcmd. For
 this tutorial we will use a configuration file.
 Start by edit your configuration file via the following:
 
@@ -127,5 +127,5 @@ This shows what would be sent to the AI provider without actually sending it.
 
 Now that you've created your first prompt, explore:
 
-- **[Configuration](/configuration/)** - More on Configuration
+- **[Configuration](/configuration/sources/)** - More on Configuration
 - **[Dotprompt Files](/dotprompt/)** - More on Dotprompt format

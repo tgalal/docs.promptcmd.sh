@@ -1,9 +1,9 @@
 # Configuration Resolution
 
-While [Model Resolution]() maps to the direct model configuration as defined in
-`config.toml`, a final configuration is built from merging that with others
-layers of configuration from difference sources. This gives full flexibility
-over where every configuration key is defined.
+While [Model Resolution](./model-resolution) maps to the direct model
+configuration as defined in `config.toml`, a final configuration is built from
+merging that with others layers of configuration from difference sources. This
+gives full flexibility over where every configuration key is defined.
 
 ## Configuration Sources
 
@@ -54,7 +54,7 @@ precedence over everything else.
 
 ## Groups
 
-When [Model Resolution]() results in a group, the above configuration
+When [Model Resolution](./model-resolution) results in a group, the above configuration
 resolution strategy is applied to its members.
 
 
