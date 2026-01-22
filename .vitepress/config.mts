@@ -58,8 +58,14 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Overview', link: '/dotprompt/' },
-          { text: 'Frontmatter', link: '/dotprompt/frontmatter' },
-          { text: 'Templates', link: '/dotprompt/templates' }
+          { text: 'Frontmatter', link: '/dotprompt/frontmatter', items: [
+            { text: 'Model', link: '/dotprompt/frontmatter#model-specification' },
+            { text: 'Input Schema', link: '/dotprompt/frontmatter#input-schema' },
+            { text: 'Code Output', link: '/dotprompt/frontmatter#code-output' },
+            { text: 'JSON Output', link: '/dotprompt/frontmatter/#json-output'}
+
+          ] },
+          { text: 'Templates', link: '/dotprompt/templates' },
         ]
       },
       {

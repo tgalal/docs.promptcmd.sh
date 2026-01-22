@@ -171,9 +171,63 @@ in the input schema. Use the `stdin` helper to retrieve it:
 Summarize the following text: {{stdin}}
 ```
 
-## Output Schema
+## Output Formats
 
-For models supporting structured output, you can describe the schema of the
+### Code Output
+
+If a prompt is expected to output code, configuring the output format in the
+frontmatter to `code` will ensure the code is enclosed in a fenced code
+block, which some models seem to like doing:
+
+```
+---
+input:
+  schema:
+    desc: string
+output:
+  format: code
+---
+
+Produce a pure bash script according to the following description, without any
+explanation, just the script ready to execute:
+
+{{desc}}
+```
+
+With that, if the model produces:
+
+````
+```bash
+#!/bin/bash
+
+for file in *; do
+    # Skip if it's a directory
+    if [ -f "$file" ]; then
+        mv "$file" "${file}.bak"
+    fi
+done
+```
+````
+
+The final output becomes:
+
+```
+#!/bin/bash
+
+for file in *; do
+    # Skip if it's a directory
+    if [ -f "$file" ]; then
+        mv "$file" "${file}.bak"
+    fi
+done
+```
+
+
+
+
+### JSON Output
+
+For models supporting structured output, you can describe JSON schema of the
 output in the Frontmatter.
 
 ::: warning
